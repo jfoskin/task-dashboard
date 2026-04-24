@@ -14,7 +14,7 @@ function App() {
   }
   const statsStart = {
      characterCount: inputValue.length,
-    wordCount: 0,
+    wordCount: inputValue.split(' ').filter(Boolean).length,
     readingTime: 5 
   }
 
