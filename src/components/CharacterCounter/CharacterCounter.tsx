@@ -15,8 +15,8 @@ const CharacterCounter: React.FC<CharacterCounterProps> = ( {minWords, maxWords}
   }
   const statsStart = {
      characterCount: inputValue.length,
-    wordCount: inputValue.split(/\s+/).filter(Boolean).length,
-    readingTime: inputValue.split(/\s+/).filter(Boolean).length/250* 60
+    wordCount: inputValue.trim().split(/\s+/).filter(Boolean).length,
+    readingTime: inputValue.split(/\s+/).filter(Boolean).length/250*60
   }
 
   return (
